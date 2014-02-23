@@ -1,0 +1,19 @@
+{
+  "name": "tap-bail",
+  "version": "0.0.0",
+  "description": "Bail out when a TAP test fails",
+  "repository": "juliangruber/tap-bail",
+  "license": "MIT",
+  "scripts": {
+    "test": "make test"
+  },
+  "bin": {
+    "tap-bail": "bin/tap-bail.js"
+  },
+  "devDependencies": {
+    "tap": "^0.4.8"
+  },
+  "dependencies": {
+    "tap-parser": "^0.4.1"
+  }
+}
