@@ -2,7 +2,6 @@ var spawn = require('child_process').spawn;
 var test = require('tap').test;
 
 test('success', function(t){
-  t.ok(0)
   var src = 'require("tap").test(function(t){t.ok(1);t.end()});';
   src += src;
   var runner = spawn('node', ['-e', src]);
