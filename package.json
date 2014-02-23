@@ -1,7 +1,7 @@
 {
   "name": "tap-bail",
   "version": "0.0.0",
-  "description": "Bail out when a TAP test fails",
+  "description": "Bail out when the first TAP test fails",
   "repository": "juliangruber/tap-bail",
   "license": "MIT",
   "scripts": {
