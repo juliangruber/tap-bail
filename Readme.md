@@ -6,6 +6,8 @@
 
   Similar to mocha's `--bail`.
 
+  [![build status](https://secure.travis-ci.org/juliangruber/tap-bail.png)](http://travis-ci.org/juliangruber/tap-bail)
+
 ## Example
 
   With tap-bail:
