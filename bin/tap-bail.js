@@ -7,7 +7,14 @@ var p = parser(function(results){
 });
 
 p.on('assert', function(assert){
-  if (!assert.ok) process.exit(1);
+  if (!assert.ok) {
+    // Only abort after, error message was printed
+    p.on('extra', function(extra) {
+        if(extra.indexOf('...') !== -1) {
+            process.exit(1);
+        }
+    });
+  }
 });
 
 process.stdin.pipe(process.stdout);
