@@ -2,18 +2,32 @@
   "name": "tap-bail",
   "version": "0.0.0",
   "description": "Bail out when the first TAP test fails",
+  "keywords": [
+    "tap",
+    "test",
+    "fail",
+    "bail",
+    "not",
+    "ok",
+    "exit",
+    "stop",
+    "stream",
+    "pipe"
+  ],
+  "main": "index.js",
+  "bin": {
+    "tap-bail": "bin/cmd.js"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
   "repository": "juliangruber/tap-bail",
   "license": "MIT",
-  "scripts": {
-    "test": "make test"
-  },
-  "bin": {
-    "tap-bail": "bin/tap-bail.js"
-  },
   "devDependencies": {
-    "tap": "^0.4.8"
+    "tap": "^7.1.2",
+    "tape": "^4.6.2"
   },
   "dependencies": {
-    "tap-parser": "^0.4.1"
+    "tap_parser": "^1.0.2"
   }
 }
