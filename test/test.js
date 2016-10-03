@@ -5,7 +5,7 @@ test('success', function(t){
   var src = 'require("tap").test(function(t){t.ok(1);t.end()});';
   src += src;
   var runner = spawn('node', ['-e', src]);
-  var bail = spawn('./bin/tap-bail.js');
+  var bail = spawn('./bin/cmd.js');
 
   runner.stderr.pipe(process.stderr);
   bail.stderr.pipe(process.stderr);
@@ -32,7 +32,7 @@ test('fail', function(t){
   var src = 'require("tap").test("NAME", function(t){t.ok(0);t.end()});';
   src += src;
   var runner = spawn('node', ['-e', src]);
-  var bail = spawn('./bin/tap-bail.js');
+  var bail = spawn('./bin/cmd.js');
 
   runner.stderr.pipe(process.stderr);
   bail.stderr.pipe(process.stderr);
